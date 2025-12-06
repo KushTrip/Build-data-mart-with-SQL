@@ -85,20 +85,6 @@ This project implements a relational Airbnb-style booking database in SQL, cover
       - Reviews and Feedback filtered by text content or rating value. 
       - Queries over `Confirmation`, `Inquiry`, `Income`, and other support entities. 
 
-- `AIRBNB.pdf`  
-  - Documentation-style PDF with:
-    - Entity definitions and schema snapshots.  
-    - Example query executions and result grids for the database. 
-
-- `Abstract-of-my-work.docx`  
-  - Abstract describing:
-    - Project motivation and scope.  
-    - Description of the 20 tables and the 400 total records.  
-    - Summary that the system supports end-to-end Airbnb-style operations for hosts and guests. 
-
-- `Aim-of-the-work.docx`  
-  - (Not parsed programmatically here, but typically describes objectives, requirements, and expected outcomes of the project.)
-
 ## Installation
 
 ### Prerequisites
