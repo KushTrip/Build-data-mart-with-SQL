@@ -7,8 +7,8 @@ This project implements a relational Airbnb-style booking database in SQL, cover
 ## Features
 
 - 20 normalized tables covering the full Airbnb workflow:
-  - `User`, `Guest`, `Host`, `Location`, `HotelRoom`, `CreditCard`, `Booking`, `Review`, `SocialNetwork`, `Communication`, `Calculation`, `Availability`, `Photograph`, `Profile`, `Rating`, `Feedback`, `Confirmation`, `Inquiry`, `Payment`, and `Income`. [file:1][file:2][file:4]
-- Referential integrity enforced via foreign keys between users, guests, hosts, rooms, bookings, and financial entities. [file:1][file:2][file:4]
+  - `User`, `Guest`, `Host`, `Location`, `HotelRoom`, `CreditCard`, `Booking`, `Review`, `SocialNetwork`, `Communication`, `Calculation`, `Availability`, `Photograph`, `Profile`, `Rating`, `Feedback`, `Confirmation`, `Inquiry`, `Payment`, and `Income`.
+- Referential integrity enforced via foreign keys between users, guests, hosts, rooms, bookings, and financial entities. 
 - Realistic sample data (around 20 rows per table) for users, rooms, bookings, reviews, payments, ratings, and more to support meaningful querying and analysis. 
 - Dedicated `test-queries.sql` file with targeted `SELECT` and `JOIN` queries to exercise individual entities and complex multi-table joins.
 
@@ -17,7 +17,7 @@ This project implements a relational Airbnb-style booking database in SQL, cover
 ### Core Identity Layer
 
 - **User**  
-  Stores basic user information such as `UserID`, `Name`, `Email`, `Password`, and `PhoneNumber`. [file:1][file:4]
+  Stores basic user information such as `UserID`, `Name`, `Email`, `Password`, and `PhoneNumber`. 
 
 - **Guest** and **Host**  
   Extend `User` via a `UserID` foreign key. `Guest` adds profile picture and social network link, while `Host` adds profile picture and phone number for contact. 
@@ -76,7 +76,7 @@ This project implements a relational Airbnb-style booking database in SQL, cover
 
 - `test-queries.sql`  
   - Contains:
-    - A complex `SELECT` using multiple `JOIN`s across `Booking`, `Host`, `HotelRoom`, `Payment`, and `Guest` to display a consolidated booking view. [file:2][file:3][file:4]
+    - A complex `SELECT` using multiple `JOIN`s across `Booking`, `Host`, `HotelRoom`, `Payment`, and `Guest` to display a consolidated booking view. 
     - Per-entity queries to validate behavior, such as:
       - Users filtered by phone number pattern. 
       - Guests filtered by social network link. 
